@@ -1,13 +1,10 @@
 import React from "react";
-import img from "../../assets/images/banner.jpg";
+import BannerImg from "../../assets/Images/home-wallpaper.jpg";
 
 const HomeBanner = () => {
   return (
-    <div>
-      <div className="w-64">
-        <img src={img} />
-        <p className="text-4xl">hey</p>
-      </div>{" "}
+    <div className="w-full">
+      <img src={BannerImg} className="w-full h-500" />
     </div>
   );
 };
