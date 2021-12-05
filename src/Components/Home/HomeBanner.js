@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
+import BannerImg from "../../assets/Images/home-wallpaper.jpg";
 
 const HomeBanner = () => {
-    return (
-        <div>
-            Home Banner </div>
-    )
-}
+  return (
+    <div className="w-full">
+      <img src={BannerImg} className="w-full h-500" />
+    </div>
+  );
+};
 
-export default HomeBanner
+export default HomeBanner;
