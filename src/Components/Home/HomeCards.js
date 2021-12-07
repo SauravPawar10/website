@@ -1,4 +1,5 @@
 import React from 'react'
+import img from "../../assets/Images/card-medal.png"
 
 const HomeCards = () => {
     return (
@@ -11,14 +12,14 @@ const HomeCards = () => {
                 </div>
                 <div className="px-3.5 my-7">
                     <div class="flex justify-center flex-wrap">
-                        <div class="field--item per-row-item">
-                            <div class="paragraph paragraph--type--icon-list-item paragraph--view-mode--default icon-linked">
-                                <a href="/academy/our-mission-philosophy" class="paragraph-icon icon-link">
-                                    <span class="field field--name-field-image field--type-entity-reference field--label-hidden field--item">
-                                        <img src="/sites/default/files/styles/icon_list_item_thumbnail/public/2021-06/medal.png?itok=39dtigwk" width="80" height="80" alt="Medal icon" loading="lazy" class="img-responsive" />
+                        <div class="relative px-3.5 mb-7">
+                            <div class=" border-2 border-yellow flex flex-col text-lg font-bold h-full p-5 text-center w-full">
+                                <a href="#" class="">
+                                    <span class="">
+                                        <img src={img} width="80" height="80" alt="Medal icon" loading="lazy" class="img-responsive" />
                                     </span>
-                                    <h3>
-                                        <span class="field field--name-field-title field--type-string field--label-hidden field--item mkdf-banner-title-inner">Our Missions
+                                    <h3 className="uppercase text-2xl text-blue-100 hover:text-white mt-6 mb-3">
+                                        <span class="py-3.5 px-2.5 field field--name-field-title field--type-string field--label-hidden field--item mkdf-banner-title-inner">Our Missions
                                             <span class="mkdf-banner-title-highlighted-item"></span>
                                         </span>
                                     </h3>
