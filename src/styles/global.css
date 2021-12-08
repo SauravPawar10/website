@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+  .mkdf-btn-top-line {
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    width: 0;
+    height: 2px;
+    background-color: #f0b035;
+    z-index: 0;
+    -webkit-transition: 0s 0.3s;
+    transition: 0s 0.3s;
+    transition: all 0.3s cubic-bezier(0.78, 0.2, 0.21, 0.88), color 0s;
+  }
+
+  .mkdf-btn-right-line {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    width: 2px;
+    height: 95%;
+    background-color: #f0b035;
+    z-index: 0;
+    transition: all 0.3s cubic-bezier(0.78, 0.2, 0.21, 0.88), color 0s;
+    transform: translate3d(5px, 5px, 0);
+  }
+
+  .mkdf-btn-bottom-line {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 90%;
+    height: 2px;
+    background-color: #f0b035;
+    z-index: 0;
+    transform: translate3d(5px, 5px, 0);
+    transition: all 0.3s cubic-bezier(0.78, 0.2, 0.21, 0.88), color 0s;
+  }
+  .mkdf-btn-left-line {
+    position: absolute;
+    bottom: 9px;
+    left: 15px;
+    width: 2px;
+    height: 0;
+    background-color: #f0b035;
+    z-index: 0;
+    -webkit-transition: 0s 0.3s;
+    transition: 0s 0.3s;
+    transition: all 0.3s cubic-bezier(0.78, 0.2, 0.21, 0.88), color 0s;
+  }
 
   /* The actual timeline (the vertical ruler) */
   .timeline {
